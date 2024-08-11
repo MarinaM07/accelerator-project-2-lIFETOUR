@@ -1,0 +1,36 @@
+// Сustom сolor
+
+$color-elephant: #2d383f;
+$color-navy-blue: #0266c1;
+$color-resolution-blue: #1c3374;
+$color-nobel: #999999;
+$color-torch-red: #ff121f;
+$color-gainsboro: #d9d9d9;
+
+// Default color
+
+$color-default-black: #000000;
+$color-default-white: #ffffff;
+
+
+// Gradient
+
+$main-gradient: linear-gradient(112deg, rgba(15, 20, 41, 0.33) 17.23%, rgba(15, 20, 41, 0) 94.93%);
+$additional-graditen: linear-gradient(0deg, rgba(0, 0, 0, 0.6) 22.3%, rgba(0, 0, 0, 0) 60.32%);
+
+// Typography
+
+$light: 300;
+$regular: 400;
+$medium: 500;
+$semi-bold: 600;
+$bold: 700;
+$extra-bold: 800;
+$montserrat: "Montserrat", "Arial", sans-serif;
+
+// Width
+
+$desktop-width: 1440px;
+$tablet-width: 768px;
+$mobile-width-only: 767px;
+$mobile-width: 320px;
