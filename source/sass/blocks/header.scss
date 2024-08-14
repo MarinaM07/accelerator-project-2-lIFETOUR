@@ -37,7 +37,8 @@
 }
 
 .header__logo {
-  @media (min-width: $tablet-width) {
+  color: $color-default-white;
+    @media (min-width: $tablet-width) {
     margin-right: 99px;
   }
 

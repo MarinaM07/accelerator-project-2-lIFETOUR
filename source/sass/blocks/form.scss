@@ -1,0 +1,297 @@
+.form {
+  display: flex;
+  flex-direction: column;
+
+  min-height: 558px;
+  padding: 40px 31px;
+
+  background-image: image-set(url("../img/form/form-mobile@2x.webp") type("image/webp") 2x, url("../img/form/form-mobile@1x.webp") type("image/webp") 1x, url("../img/form/form-mobile@2x.jpg") type("image/jpg") 2x, url("../img/form/form-mobile@1x.jpg") type("image/jpg") 1x);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  @media (min-width: $tablet-width) {
+    min-height: 600px;
+    padding: 40px;
+
+    background-image: image-set(url("../img/form/form-tablet@2x.webp") type("image/webp") 2x, url("../img/form/form-tablet@1x.webp") type("image/webp") 1x, url("../img/form/form-tablet@2x.jpg") type("image/jpg") 2x, url("../img/form/form-tablet@1x.jpg") type("image/jpg") 1x);
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 680px;
+    padding: 40px;
+
+    background-image: image-set(url("../img/form/form-desktop@2x.webp") type("image/webp") 2x, url("../img/form/form-desktop@1x.webp") type("image/webp") 1x, url("../img/form/form-desktop@2x.jpg") type("image/jpg") 2x, url("../img/form/form-desktop@1x.jpg") type("image/jpg") 1x);
+  }
+}
+
+.form__container {
+  display: flex;
+  flex-direction: column;
+
+  margin: 0 auto;
+  padding-top: 134px;
+
+  color: $color-default-white;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 144px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 252.5px;
+  }
+
+  h2 {
+    font-size: 22px;
+    font-weight: $extra-bold;
+    line-height: 22px;
+    word-break: break-word;
+    max-width: 258px;
+    margin: 0;
+    padding-bottom: 20px;
+
+    text-align: center;
+
+    @media (min-width: $tablet-width) {
+      font-size: 25px;
+      line-height: 25px;
+
+      max-width: 355px;
+      padding-bottom: 28px;
+    }
+
+    @media (min-width: $desktop-width) {
+      font-size: 35px;
+      line-height: 35px;
+
+      max-width: 1360px;
+      padding-bottom: 16px;
+    }
+  }
+
+  p {
+    font-size: 12px;
+    font-weight: $regular;
+    line-height: 18px;
+
+    max-width: 258px;
+    margin: 0 auto;
+    padding-bottom: 20px;
+    word-break: break-word;
+    text-align: center;
+
+    @media (min-width: $tablet-width) {
+      font-size: 16px;
+      line-height: 24px;
+
+      max-width: 360px;
+      padding-bottom: 24px;
+    }
+
+    @media (min-width: $desktop-width) {
+      max-width: 1360px;
+      padding-bottom: 39px;
+    }
+  }
+}
+
+.form__container br {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.form__wrapper {
+  form {
+    position: relative;
+
+    display: flex;
+    flex-direction: row;
+
+    gap: 8px;
+
+    @media (min-width: $tablet-width) {
+      width: 300px;
+
+      gap: 10px;
+    }
+
+    @media (min-width: $desktop-width) {
+      flex-direction: row;
+
+      width: 960px;
+      margin: 0 auto;
+      gap: 30px;
+    }
+  }
+}
+
+.form__phone,
+.form__mail {
+  font-size: 16px;
+  font-weight: $regular;
+  line-height: 16px;
+
+  display: block;
+
+  width: 228px;
+  height: 48px;
+  padding: 0 14px;
+
+  border: 1px solid rgba(2, 102, 193, 0.1);
+  background-color: $color-default-white;
+
+  @media (min-width: $tablet-width) {
+    width: 298px;
+    height: 53px;
+    padding: 1px 27px 1px 33px;
+
+    border-radius: 2px;
+  }
+}
+
+.form__phone-label,
+.form__mail-label {
+  position: absolute;
+
+  top: 17px;
+  left: 15px;
+  opacity: 0.5;
+  color: $color-elephant;
+
+  @media (min-width: $tablet-width) {
+    top: 17px;
+    left: 30px;
+  }
+}
+
+.form__mail-label {
+  top: 75px;
+  left: 15px;
+
+  @media (min-width: $tablet-width) {
+    top: 87px;
+    left: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 17px;
+    left: 420px;
+  }
+}
+
+.form__phone:valid,
+.form__mail:valid {
+  color: rgba($color-navy-blue, 0.5);
+  border-color: $color-navy-blue;
+}
+
+.form__phone:focus+.form__phone-label,
+.form__mail:focus+.form__mail-label,
+.form__phone:valid+.form__phone-label,
+.form__mail:valid+.form__mail-label,
+.form__phone:invalid:not(:placeholder-shown)+.form__phone-label,
+.form__mail:invalid:not(:placeholder-shown)+.form__mail-label {
+  font-size: 0;
+}
+
+.form__phone:hover,
+.form__mail:hover {
+  border: 1px solid $color-navy-blue;
+
+  @media (min-width: $tablet-width) {
+    border-radius: 2px;
+  }
+}
+
+.form__phone:focus,
+.form__mail:focus {
+  border: 1px solid $color-elephant;
+  border-radius: 2px;
+
+  .form__phone-label,
+  .form__mail-label {
+    color: transparent;
+  }
+}
+
+.form__phone:disabled,
+.form__mail:disabled {
+  border-color: $color-nobel;
+}
+
+.form__phone:disabled+.form__phone-label,
+.form__mail:disabled+.form__mail-label {
+  color: $color-nobel;
+}
+
+.form__error .form__mail:invalid,
+.form__error .form__phone:invalid {
+  border-color: $color-torch-red;
+  color: $color-nobel;
+}
+
+.form__button {
+  font-size: 16px;
+  font-weight: $medium;
+  line-height: 16px;
+
+  display: inline-flex;
+  justify-content: center;
+
+  width: 258px;
+  padding: 21px 20px 19px;
+
+  cursor: pointer;
+  user-select: none;
+  text-decoration: none;
+  word-break: break-word;
+
+  color: $color-default-white;
+  border: 1px solid transparent;
+  background-color: $color-navy-blue;
+
+  @media (min-width: $tablet-width) {
+    width: 360px;
+    padding-top: 20px;
+
+    border-radius: 7px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 180px;
+    padding: 20px;
+    padding-bottom: 18px;
+
+    border-radius: 0;
+  }
+
+  &:hover {
+    color: $color-resolution-blue;
+    border: 1px solid $color-resolution-blue;
+    background-color: $color-default-white;
+  }
+
+  &:focus {
+    color: $color-resolution-blue;
+    background-color: $color-default-white;
+  }
+
+  &:active {
+    color: $color-default-white;
+    background-color: $color-resolution-blue;
+  }
+
+  &--disabled {
+    pointer-events: none;
+
+    border: 1px solid $color-nobel;
+    background-color: $color-nobel;
+
+    &:focus {
+      color: $color-default-white;
+      background-color: $color-nobel;
+    }
+  }
+}
