@@ -1,9 +1,8 @@
-
 .advantages__wrapper {
   position: relative;
   max-width: 290px;
   margin: 0 auto;
-  padding: 36px 15px 0;
+  padding: 36px 15px 20px;
   min-height: 300px;
   color: $color-elephant;
 
@@ -16,7 +15,7 @@
     flex-direction: column;
   }
 
-  @media (width >= 840px) {
+  @media (width >=840px) {
     overflow: visible;
   }
 
@@ -24,7 +23,7 @@
     overflow: hidden;
 
     margin: 0 auto;
-    padding: 222px 0 50px;
+    padding: 135px 0 100px;
 
     display: flex;
     flex-direction: column;
@@ -44,6 +43,9 @@
 }
 
 .advantages__title {
+  font-size: 22px;
+  line-height: 22px;
+  font-weight: $extra-bold;
   margin: 0 auto;
   padding-bottom: 37px;
 
@@ -51,9 +53,14 @@
 
   @media (min-width: $tablet-width) {
     padding-bottom: 60px;
+    font-size: 25px;
+    line-height: 25px;
+
   }
 
   @media (min-width: $desktop-width) {
+    font-size: 35px;
+    line-height: 35px;
     max-width: 1200px;
     padding-bottom: 50px;
   }
@@ -69,10 +76,12 @@
   gap: 15px 15px;
 
   @media (min-width: $tablet-width) {
+    display: flex;
     align-items: center;
     justify-content: center;
 
     gap: 31px 30px;
+    padding-bottom: 40px;
   }
 
   @media (min-width: $desktop-width) {
@@ -87,9 +96,8 @@
 .advantages__swiper-slide {
   position: relative;
 
-  max-width: 260px;
   min-height: 137px;
-  padding: 81px 14px 19px;
+  padding: 82px 10px 20px;
 
   text-align: center;
   display: flex;
@@ -100,7 +108,7 @@
 
   @media (min-width: $tablet-width) {
     max-width: 284px;
-    min-height: 206px;
+    min-height: 207px;
     padding: 103px 19px 28px;
 
     display: flex;
@@ -110,7 +118,7 @@
     justify-content: center;
 
     max-width: 339px;
-    min-height: 204px;
+    min-height: 165px;
     padding: 123px 20px 0;
 
     position: relative;
@@ -220,6 +228,12 @@
   span {
     position: relative;
   }
+
+  @media (max-width:$mobile-width) {
+    br {
+      display: none;
+    }
+  }
 }
 
 .advantages__swiper-slide.swiper-slide {
@@ -240,7 +254,7 @@
       white-space: nowrap;
     }
 
-    span > span {
+    span>span {
       left: 0;
     }
   }
@@ -265,7 +279,7 @@
       white-space: nowrap;
     }
 
-    span > span:nth-of-type(1) {
+    span>span:nth-of-type(1) {
       left: auto;
       white-space: wrap;
     }
@@ -280,8 +294,8 @@
     }
   }
 
-  @media (width <= 1439px) {
-    span > span {
+  @media (width <=1439px) {
+    span>span {
       white-space: nowrap;
     }
 
@@ -337,7 +351,7 @@
       white-space: nowrap;
     }
 
-    span > span {
+    span>span {
       white-space: nowrap;
     }
   }
@@ -347,17 +361,17 @@
       white-space: nowrap;
     }
 
-    span > span:nth-of-type(1) {
+    span>span:nth-of-type(1) {
       white-space: wrap;
     }
 
-    span:nth-of-type(3) > span:nth-of-type(1) {
+    span:nth-of-type(3)>span:nth-of-type(1) {
       left: -2px;
     }
   }
 }
 
-.advantages__swiper-slide--boot span > span > span {
+.advantages__swiper-slide--boot span>span>span {
   @media (min-width: $desktop-width) {
     white-space: wrap;
   }
@@ -373,14 +387,14 @@
       left: -3px;
     }
 
-    span > span:nth-of-type(1) {
+    span>span:nth-of-type(1) {
       left: 0;
     }
   }
 
 
   @media (min-width: $tablet-width) {
-    span:nth-of-type(2) > span:nth-of-type(1) {
+    span:nth-of-type(2)>span:nth-of-type(1) {
       left: 1px;
     }
 
@@ -394,7 +408,7 @@
       left: -1px;
     }
 
-    span:nth-of-type(2) > span:nth-of-type(1) {
+    span:nth-of-type(2)>span:nth-of-type(1) {
       left: -1px;
       white-space: nowrap;
     }
@@ -410,7 +424,7 @@
     padding-right: 4px;
   }
 
-  h3 > span {
+  h3>span {
     left: 2px;
   }
 
@@ -420,12 +434,12 @@
       white-space: nowrap;
     }
 
-    span > span:nth-of-type(1) {
+    span>span:nth-of-type(1) {
       left: 0;
       white-space: nowrap;
     }
 
-    h3:nth-of-type(1) > span {
+    h3:nth-of-type(1)>span {
       left: 2px;
       white-space: wrap;
     }
@@ -442,7 +456,7 @@
       white-space: wrap;
     }
 
-    span > span {
+    span>span {
       left: -2px;
     }
   }
