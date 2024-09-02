@@ -1,19 +1,18 @@
 .main-nav {
   @media (min-width: $desktop-width) {
     display: flex;
-    align-items: center;
     flex-wrap: wrap;
+    align-items: center;
   }
 }
 
 .main-nav__list {
   position: absolute;
-  z-index: 2;
   top: 87px;
   left: 0;
+  z-index: 2;
 
   display: none;
-  word-break: break-word;
   flex-wrap: wrap;
   width: stretch;
   min-height: 215px;
@@ -21,6 +20,7 @@
   padding: 26px 0 31px;
 
   list-style-type: none;
+  word-break: break-word;
 
   background-color: $color-navy-blue;
 
@@ -30,7 +30,7 @@
     top: 81px;
 
     min-height: 253px;
-    padding: 30px 30px 44px;
+    padding: 30px 30px 70px;
 
     gap: 23.6px;
   }
@@ -40,13 +40,12 @@
 
     display: flex;
     flex-direction: row;
-
-    width: 630px;
     min-height: auto;
     padding: 0;
-    padding-bottom: 3px;
-    padding-left: 61px;
-    gap: 3px;
+
+    line-height: 16px;
+
+    gap: 30px;
   }
 }
 
@@ -61,34 +60,32 @@
 }
 
 .main-nav__link {
-  font-size: 14px;
-  font-weight: $bold;
-  line-height: 14px;
-
   padding: 10px 14px;
-  border: 1px solid transparent;
+
+  font-weight: $bold;
+  font-size: 14px;
+  line-height: 14px;
+  color: $color-default-white;
+  text-transform: uppercase;
   text-decoration: none;
   letter-spacing: 0.56px;
-  text-transform: uppercase;
 
-  color: $color-default-white;
+  border: none;
 
   @media (min-width: $tablet-width) {
-    font-size: 16px;
-    line-height: 16px;
-
     padding: 11px 14px;
 
+    font-size: 16px;
+    line-height: 16px;
     letter-spacing: 0.64px;
   }
 
   @media (min-width: $desktop-width) {
+    padding: 0 0.3px;
+
     font-weight: $regular;
-
-    padding: 13px;
-
-    letter-spacing: normal;
     text-transform: none;
+    letter-spacing: normal;
   }
 
   &:hover {
@@ -104,20 +101,12 @@
   }
 
   &--disabled {
-    pointer-events: none;
-
     color: $color-nobel;
+
+    pointer-events: none;
 
     &:focus {
       color: $color-nobel;
-    }
-  }
-}
-
-.main-nav__item:nth-child(2n) {
-  .main-nav__link {
-    @media (min-width: $desktop-width) {
-      padding-left: 12px;
     }
   }
 }

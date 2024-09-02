@@ -36,18 +36,85 @@
   }
 }
 
+.hero__swiper-wrapper .hero__swiper-slide:nth-child(2) {
+  &::after {
+    content: "";
+    position: absolute;
+    top: 525px;
+    left: 369px;
+    z-index: 3;
+
+    width: 236px;
+    height: 312px;
+
+    background-image: image-set(url("../../img/hero/kamchatka/photo-cards/photo-card-right-tablet@2x.webp") type("image/webp") 2x, url("../../img/hero/kamchatka/photo-cards/photo-card-right-tablet@1x.webp") type("image/webp") 1x, url("../../img/hero/kamchatka/photo-cards/photo-card-right-tablet@2x.png") type("image/png") 2x, url("../../img/hero/kamchatka/photo-cards/photo-card-right-tablet@2x.png") type("image/png") 1x);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    @media (min-width: $desktop-width) {
+      top: 280px;
+      left: 1043px;
+
+      width: 277px;
+      height: 366px;
+
+      background-image: image-set(url("../../img/hero/kamchatka/photo-cards/photo-card-right-desktop@2x.webp") type("image/webp") 2x, url("../../img/hero/kamchatka/photo-cards/photo-card-right-desktop@1x.webp") type("image/webp") 1x, url("../../img/hero/kamchatka/photo-cards/photo-card-right-desktop@2x.png") type("image/png") 2x, url("../../img/hero/kamchatka/photo-cards/photo-card-right-desktop@2x.png") type("image/png") 1x);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+
+    @media (max-width: $mobile-width-only) {
+      display: none;
+    }
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 472px;
+    left: 163px;
+    z-index: 2;
+
+    width: 266px;
+    height: 351px;
+
+    background-image: image-set(url("../../img/hero/kamchatka/photo-cards/photo-card-left-tablet@2x.webp") type("image/webp") 2x, url("../../img/hero/kamchatka/photo-cards/photo-card-left-tablet@1x.webp") type("image/webp") 1x, url("../../img/hero/kamchatka/photo-cards/photo-card-left-tablet@2x.png") type("image/png") 2x, url("../../img/hero/kamchatka/photo-cards/photo-card-left-tablet@1x.png") type("image/png") 1x);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    @media (min-width: $desktop-width) {
+      top: 187px;
+      left: 910px;
+
+      width: 308px;
+      height: 407px;
+
+      background-image: image-set(url("../../img/hero/kamchatka/photo-cards/photo-card-left-desktop@2x.webp") type("image/webp") 2x, url("../../img/hero/kamchatka/photo-cards/photo-card-left-desktop@1x.webp") type("image/webp") 1x, url("../../img/hero/kamchatka/photo-cards/photo-card-left-desktop@2x.png") type("image/png") 2x, url("../../img/hero/kamchatka/photo-cards/photo-card-left-desktop@1x.png") type("image/png") 1x);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+
+    @media (max-width: $mobile-width-only) {
+      display: none;
+    }
+  }
+}
+
 .hero__background {
   position: absolute;
-  z-index: -1;
   top: 0;
   left: 0;
+  z-index: -1;
 
   width: 100%;
   height: 100%;
 
   .hero__background-picture {
     display: block;
-
     width: 100%;
     height: 100%;
 
@@ -60,20 +127,30 @@
 
     object-fit: cover;
   }
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: $hero-gradient;
+  }
 }
 
 .hero__info {
   display: flex;
-  align-items: center;
   flex-direction: column;
+  align-items: center;
   max-height: 330px;
-  padding-right: 40px;
+  padding-right: 41px;
 
   color: $color-default-white;
 
   @media (min-width: $tablet-width) {
-    padding-right: 45px;
     max-height: 530px;
+    padding-right: 45px;
     overflow: auto;
   }
 
@@ -85,53 +162,54 @@
   }
 
   h2 {
-    font-size: 26px;
-    font-weight: $extra-bold;
-    line-height: 26px;
-    word-break: break-word;
     width: 290px;
     margin: 0;
     margin-bottom: 15px;
     padding-top: 8px;
 
+    font-weight: $extra-bold;
+    font-size: 26px;
+    line-height: 26px;
     text-align: center;
+    color: $color-default-white;
+    word-break: break-word;
 
     @media (min-width: $tablet-width) {
-      font-size: 56px;
-      line-height: 56px;
       width: auto;
       max-width: 678px;
       margin-bottom: 13px;
       padding: 0;
+
+      font-size: 56px;
+      line-height: 56px;
     }
 
     @media (min-width: $desktop-width) {
+      max-width: 940px;
+      margin-bottom: 22px;
+
       font-size: 77px;
       line-height: 77px;
-
-      max-width: 940px;
-      margin-bottom: 23px;
-
       text-align: left;
     }
   }
 
   p {
-    font-size: 15px;
-    font-weight: $regular;
-    line-height: 20px;
     max-width: 290px;
     margin: 0;
     margin-bottom: 60px;
 
+    font-weight: $regular;
+    font-size: 15px;
+    line-height: 20px;
     text-align: center;
 
     @media (min-width: $tablet-width) {
-      font-size: 17px;
-      line-height: 24px;
-
       max-width: 500px;
       margin-bottom: 37px;
+
+      font-size: 17px;
+      line-height: 24px;
     }
 
     @media (min-width: $desktop-width) {
@@ -156,58 +234,52 @@
 }
 
 .hero__button {
-  font-size: 16px;
-  font-weight: $medium;
-  line-height: 16px;
-
+  display: inline-flex;
+  justify-content: center;
   width: 140px;
-  padding: 20px 19px 18px;
+  padding: 20px 19px 19px;
 
-  cursor: pointer;
-  user-select: none;
+  font-weight: $medium;
+  font-size: 16px;
+  line-height: 16px;
+  color: $color-default-white;
   text-decoration: none;
   word-break: break-word;
 
-  color: $color-default-white;
-  border: 1px solid transparent;
-
-  display: inline-flex;
-  justify-content: center;
-
   background-color: $color-navy-blue;
+  border: 1px solid transparent;
+  cursor: pointer;
 
-  @media (min-width: $tablet-width) {
-    padding: 20px;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding: 20px 19px 18px;
-  }
+  user-select: none;
 
   &:hover {
     color: $color-resolution-blue;
-    border: 1px solid $color-resolution-blue;
+
     background-color: $color-default-white;
+    border: 1px solid $color-resolution-blue;
   }
 
   &:focus {
     color: $color-resolution-blue;
+
     background-color: $color-default-white;
   }
 
   &:active {
     color: $color-default-white;
+
     background-color: $color-resolution-blue;
   }
 
   &--disabled {
-    pointer-events: none;
-
-    border: 1px solid $color-nobel;
     background-color: $color-nobel;
+    border: 1px solid $color-nobel;
+
+    pointer-events: none;
 
     &:focus {
       color: $color-default-white;
+
       background-color: $color-nobel;
     }
   }
@@ -215,7 +287,6 @@
 
 .hero__description {
   display: flex;
-
   margin-top: 134px;
 
   gap: 10px;
@@ -225,28 +296,26 @@
   display: none;
 
   @media (min-width: $desktop-width) {
-    font-size: 12px;
-    font-weight: $regular;
-    line-height: 16px;
-
     position: relative;
 
     display: inline-block;
-
     padding: 13px 19px 13px 39.5px;
+
+    font-weight: $regular;
+    font-size: 12px;
+    line-height: 16px;
 
     border: 1px solid rgba(255, 255, 255, 0.5);
 
     &::before {
+      content: "";
       position: absolute;
-      z-index: 1;
       top: 15px;
       left: 19px;
+      z-index: 1;
 
       width: 12px;
       height: 12px;
-
-      content: "";
 
       background-repeat: no-repeat;
       background-position: center;
@@ -272,7 +341,6 @@
 
   display: flex;
   justify-content: center;
-
   width: 100%;
 
   gap: 12px;
@@ -286,7 +354,6 @@
     left: 1216px;
 
     justify-content: normal;
-
     width: 150px;
   }
 }
@@ -297,9 +364,9 @@
   width: 14px;
   height: 14px;
 
-  opacity: 1;
-  border: 1px solid $color-default-white;
   background-color: transparent;
+  border: 1px solid $color-default-white;
+  opacity: 1;
 
   gap: 11px;
 

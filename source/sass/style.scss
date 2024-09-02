@@ -4,22 +4,23 @@
 @import "vendor/normalize";
 
 /* GLOBAL */
-@import "./global/mixin.scss";
-@import "./global/variables.scss";
-@import "./global/fonts.scss";
-@import "./global/global.scss";
-@import "./global/visually-hidden.scss";
+@import "./global/mixin";
+@import "./global/variables";
+@import "./global/fonts";
+@import "./global/global";
+@import "./global/visually-hidden";
+@import "./global/buttons";
 
 /* BLOCKS */
-@import "./blocks/header.scss";
-@import "./blocks/main-nav.scss";
-@import "./blocks/hero.scss";
-@import "./blocks/tours.scss";
-@import "./blocks/training.scss";
-@import "./blocks/about.scss";
-@import "./blocks/review.scss";
-@import "./blocks/advantages.scss";
-@import "./blocks/gallery.scss";
-@import "./blocks/form.scss";
-@import "./blocks/contacts.scss";
-@import "./blocks/footer.scss";
+@import "./blocks/header";
+@import "./blocks/main-nav";
+@import "./blocks/hero";
+@import "./blocks/tours";
+@import "./blocks/training";
+@import "./blocks/about";
+@import "./blocks/review";
+@import "./blocks/advantages";
+@import "./blocks/gallery";
+@import "./blocks/form";
+@import "./blocks/contacts";
+@import "./blocks/footer";
