@@ -54,7 +54,6 @@
 
 .footer__list {
   display: grid;
-  width: 290px;
   padding-top: 23px;
 
   gap: 15px 50px;
@@ -94,17 +93,13 @@
 
   @media (min-width: $tablet-width) {
     display: flex;
-    width: 494px;
-    padding: 0;
 
+    padding: 0;
     gap: 24px;
   }
 
   @media (min-width: $desktop-width) {
     justify-content: space-between;
-    padding: 0 114px;
-    width: 572px;
-
     gap: 30px;
   }
 }

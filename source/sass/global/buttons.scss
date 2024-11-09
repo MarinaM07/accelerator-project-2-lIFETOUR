@@ -73,3 +73,7 @@
   left: 5px;
   transform: rotate(180deg);
 }
+
+.button:active:hover::after {
+  background-color: $color-default-white;
+}

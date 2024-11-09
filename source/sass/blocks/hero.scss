@@ -140,11 +140,13 @@
 }
 
 .hero__info {
+  max-width: 1200px;
   display: flex;
   flex-direction: column;
   align-items: center;
   max-height: 330px;
   padding-right: 41px;
+  margin: 0 auto;
 
   color: $color-default-white;
 

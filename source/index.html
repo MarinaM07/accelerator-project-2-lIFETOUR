@@ -1174,7 +1174,8 @@
 
               <div class="form__group">
                 <input class="form__phone" id="phone" type="tel" name="phone" minlength="5" maxlength="18"
-                  placeholder="+7(000)-000-00-00" pattern="^\+7\(\d{3}\)-\d{3}-\d{2}-\d{2}$" required>
+                  placeholder="+7(000)-000-00-00" pattern="^\+7\d{10}$|^\+7\s\d{3}\s\d{3}\s\d{2}\s\d{2}$" required
+                  oninput="this.value = this.value.replace(/[^0-9+()\-]/g, '');">
                 <label class="form__phone-label" for="phone">Телефон</label>
               </div>
 
@@ -1251,10 +1252,10 @@
                 <a class="footer__link" href="#tours">Туры</a>
               </li>
               <li class="footer__item footer__item-training">
-                <a class="footer__link" href="#education">Обучение</a>
+                <a class="footer__link" href="#training">Обучение</a>
               </li>
               <li class="footer__item footer__item--about">
-                <a class="footer__link" href="#about-us">О нас</a>
+                <a class="footer__link" href="#about">О нас</a>
               </li>
               <li class="footer__item footer__item--review">
                 <a class="footer__link" href="#reviews">Отзывы</a>
