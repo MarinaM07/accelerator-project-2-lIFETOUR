@@ -36,12 +36,12 @@
   }
 }
 
-.hero__swiper-wrapper .hero__swiper-slide:nth-child(2) {
+.hero__swiper-wrapper .hero__swiper-slide:nth-child(2) .hero__info {
   &::after {
     content: "";
     position: absolute;
-    top: 525px;
-    left: 369px;
+    bottom: -270px;
+    left: 320px;
     z-index: 3;
 
     width: 236px;
@@ -53,8 +53,8 @@
     background-size: cover;
 
     @media (min-width: $desktop-width) {
-      top: 280px;
-      left: 1043px;
+      bottom: 75px;
+      left: 923px;
 
       width: 277px;
       height: 366px;
@@ -73,9 +73,9 @@
   &::before {
     content: "";
     position: absolute;
-    top: 472px;
-    left: 163px;
-    z-index: 2;
+    bottom: -260px;
+    left: 115px;
+    z-index: -1;
 
     width: 266px;
     height: 351px;
@@ -86,8 +86,8 @@
     background-size: cover;
 
     @media (min-width: $desktop-width) {
-      top: 187px;
-      left: 910px;
+      bottom: 125px;
+      left: 790px;
 
       width: 308px;
       height: 407px;
@@ -140,23 +140,25 @@
 }
 
 .hero__info {
-  max-width: 1200px;
   display: flex;
   flex-direction: column;
   align-items: center;
   max-height: 330px;
   padding-right: 41px;
   margin: 0 auto;
+  position: relative;
 
   color: $color-default-white;
 
   @media (min-width: $tablet-width) {
+    max-width: 678px;
     max-height: 530px;
     padding-right: 45px;
-    overflow: auto;
+
   }
 
   @media (min-width: $desktop-width) {
+    max-width: 1200px;
     display: block;
     align-items: normal;
     max-height: 520px;
