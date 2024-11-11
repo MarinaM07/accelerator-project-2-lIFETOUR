@@ -2,6 +2,8 @@
 // import Swiper from "swiper";
 // import {Navigation, Pagination} from "swiper/modules";
 // import 'swiper/css';
+import '../sass/style.scss';
+
 import './menu.js';
 import './hero-swiper.js';
 import './tour-swiper.js';

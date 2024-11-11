@@ -17,7 +17,10 @@
     right: 0;
     z-index: -1;
 
-    background-image: image-set(url("../../img/background-clouds/clouds-mobile@2x.webp") type("image/webp") 2x, url("../../img/background-clouds/clouds-mobile@1x.webp") type("image/webp") 1x, url("../../img/background-clouds/clouds-mobile@2x.png") type("image/png") 2x, url("../../img/background-clouds/clouds-mobile@1x.png") type("image/png") 1x);
+    background-image: image-set(url("/img/background-clouds/clouds-mobile@2x.webp") type("image/webp") 2x,
+    url("/img/background-clouds/clouds-mobile@1x.webp") type("image/webp") 1x,
+    url("/img/background-clouds/clouds-mobile@2x.png") type("image/png") 2x,
+    url("/img/background-clouds/clouds-mobile@1x.png") type("image/png") 1x);
     background-repeat: no-repeat;
     background-position-y: 10px;
     background-size: cover;
@@ -26,7 +29,10 @@
       height: 1538px;
       width: 425px;
 
-      background-image: image-set(url("../../img/background-clouds/clouds-1-tablet@2x.webp") type("image/webp") 2x, url("../../img/background-clouds/clouds-1-tablet@1x.webp") type("image/webp") 1x, url("../../img/background-clouds/clouds-1-tablet@2x.png") type("image/png") 2x, url("../../img/background-clouds/clouds-1-tablet@1x.png") type("image/png") 1x);
+      background-image: image-set(url("/img/background-clouds/clouds-1-tablet@2x.webp") type("image/webp") 2x,
+      url("/img/background-clouds/clouds-1-tablet@1x.webp") type("image/webp") 1x,
+      url("/img/background-clouds/clouds-1-tablet@2x.png") type("image/png") 2x,
+      url("/img/background-clouds/clouds-1-tablet@1x.png") type("image/png") 1x);
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover;
@@ -37,7 +43,10 @@
       width: 602px;
 
 
-      background-image: image-set(url("../../img/background-clouds/clouds-1-desktop@2x.webp") type("image/webp") 2x, url("../../img/background-clouds/clouds-1-desktop@1x.webp") type("image/webp") 1x, url("../../img/background-clouds/clouds-1-desktop@2x.png") type("image/png") 2x, url("../../img/background-clouds/clouds-1-desktop@1x.png") type("image/png") 1x);
+      background-image: image-set(url("/img/background-clouds/clouds-1-desktop@2x.webp") type("image/webp") 2x,
+      url("/img/background-clouds/clouds-1-desktop@1x.webp") type("image/webp") 1x,
+      url("/img/background-clouds/clouds-1-desktop@2x.png") type("image/png") 2x,
+      url("/img/background-clouds/clouds-1-desktop@1x.png") type("image/png") 1x);
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover;

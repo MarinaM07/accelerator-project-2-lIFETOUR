@@ -47,7 +47,10 @@
     width: 236px;
     height: 312px;
 
-    background-image: image-set(url("../../img/hero/kamchatka/photo-cards/photo-card-right-tablet@2x.webp") type("image/webp") 2x, url("../../img/hero/kamchatka/photo-cards/photo-card-right-tablet@1x.webp") type("image/webp") 1x, url("../../img/hero/kamchatka/photo-cards/photo-card-right-tablet@2x.png") type("image/png") 2x, url("../../img/hero/kamchatka/photo-cards/photo-card-right-tablet@2x.png") type("image/png") 1x);
+    background-image: image-set(url("/img/hero/kamchatka/photo-cards/photo-card-right-tablet@2x.webp") type("image/webp") 2x,
+    url("/img/hero/kamchatka/photo-cards/photo-card-right-tablet@1x.webp") type("image/webp") 1x,
+    url("/img/hero/kamchatka/photo-cards/photo-card-right-tablet@2x.png") type("image/png") 2x,
+    url("/img/hero/kamchatka/photo-cards/photo-card-right-tablet@2x.png") type("image/png") 1x);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -59,7 +62,10 @@
       width: 277px;
       height: 366px;
 
-      background-image: image-set(url("../../img/hero/kamchatka/photo-cards/photo-card-right-desktop@2x.webp") type("image/webp") 2x, url("../../img/hero/kamchatka/photo-cards/photo-card-right-desktop@1x.webp") type("image/webp") 1x, url("../../img/hero/kamchatka/photo-cards/photo-card-right-desktop@2x.png") type("image/png") 2x, url("../../img/hero/kamchatka/photo-cards/photo-card-right-desktop@2x.png") type("image/png") 1x);
+      background-image: image-set(url("/img/hero/kamchatka/photo-cards/photo-card-right-desktop@2x.webp") type("image/webp") 2x,
+      url("/img/hero/kamchatka/photo-cards/photo-card-right-desktop@1x.webp") type("image/webp") 1x,
+      url("/img/hero/kamchatka/photo-cards/photo-card-right-desktop@2x.png") type("image/png") 2x,
+      url("/img/hero/kamchatka/photo-cards/photo-card-right-desktop@2x.png") type("image/png") 1x);
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover;
@@ -80,7 +86,10 @@
     width: 266px;
     height: 351px;
 
-    background-image: image-set(url("../../img/hero/kamchatka/photo-cards/photo-card-left-tablet@2x.webp") type("image/webp") 2x, url("../../img/hero/kamchatka/photo-cards/photo-card-left-tablet@1x.webp") type("image/webp") 1x, url("../../img/hero/kamchatka/photo-cards/photo-card-left-tablet@2x.png") type("image/png") 2x, url("../../img/hero/kamchatka/photo-cards/photo-card-left-tablet@1x.png") type("image/png") 1x);
+    background-image: image-set(url("/img/hero/kamchatka/photo-cards/photo-card-left-tablet@2x.webp") type("image/webp") 2x,
+    url("/img/hero/kamchatka/photo-cards/photo-card-left-tablet@1x.webp") type("image/webp") 1x,
+    url("/img/hero/kamchatka/photo-cards/photo-card-left-tablet@2x.png") type("image/png") 2x,
+    url("/img/hero/kamchatka/photo-cards/photo-card-left-tablet@1x.png") type("image/png") 1x);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -92,7 +101,10 @@
       width: 308px;
       height: 407px;
 
-      background-image: image-set(url("../../img/hero/kamchatka/photo-cards/photo-card-left-desktop@2x.webp") type("image/webp") 2x, url("../../img/hero/kamchatka/photo-cards/photo-card-left-desktop@1x.webp") type("image/webp") 1x, url("../../img/hero/kamchatka/photo-cards/photo-card-left-desktop@2x.png") type("image/png") 2x, url("../../img/hero/kamchatka/photo-cards/photo-card-left-desktop@1x.png") type("image/png") 1x);
+      background-image: image-set(url("/img/hero/kamchatka/photo-cards/photo-card-left-desktop@2x.webp") type("image/webp") 2x,
+      url("/img/hero/kamchatka/photo-cards/photo-card-left-desktop@1x.webp") type("image/webp") 1x,
+      url("/img/hero/kamchatka/photo-cards/photo-card-left-desktop@2x.png") type("image/png") 2x,
+      url("/img/hero/kamchatka/photo-cards/photo-card-left-desktop@1x.png") type("image/png") 1x);
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover;
